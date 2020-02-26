@@ -1,15 +1,15 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
 import classes from './Layout.css';
+import Hoc from '../Hoc/Hoc';
 
 const Layout = (props) => {
     return (
-        <Aux>
+        <Hoc>
             <div>Toolbar, Sidedrawer, Modal</div>
             <main className={classes.Content}>
                 {props.children}
             </main>
-        </Aux>
+        </Hoc>
     )
 }
 
